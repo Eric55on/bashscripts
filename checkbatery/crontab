@@ -1,0 +1,6 @@
+DISPLAY=:0.0
+XAUTHORITY=/home/matrix/.Xauthority
+
+#runs check batery script each 5 minutes
+*/5 * * * * /bin/sh /home/[USER]/check_batery.sh >> /home/[USER]/check_batery.log 2>&1
+
